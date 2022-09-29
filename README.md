@@ -10,6 +10,7 @@ The array I have declared is called **africanCountries** and it holds six values
 `console.log(africanCountries[0]);`
 
 This will output **Zimbabwe** to the console:
+
 ![Example output of our code](https://github.com/tawanda-profuse/Arrays-in-JavaScript/blob/master/images/image_1.png)
 
 If you open Google Chrome, you can right-click any web page and select **inspect**. This opens a section on the page that gives you access to developer tools as well as other tools that allow you to monitor HTML elements, source files, network performance etc. If you don't have a code editor, you can use Google Chrome's text editor under the **console** tab. This allows you to write Javascript syntax.
@@ -23,7 +24,8 @@ If you open Google Chrome, you can right-click any web page and select **inspect
 ## Adding & Removing Values
 You can insert items into an array by using the `push()` method. This adds a value to the array which gives it an index that is greater than the current last index by one. So, for example the code below adds **Botswana** to our previously declared array.
 
-```africanCountries.push('Botswana');
+```
+africanCountries.push('Botswana');
 
 console.log(africanCountries); // Prints the new array to the console
 ```
@@ -36,7 +38,8 @@ The **africanCountries** array now stores 7 items. If you wanted to access **Bot
 
 The array now has 6 items and you will notice that Botswana is no longer part of the array. I will now insert something that will not be stored at the last index. I would like to add **Ghana** to the collection:
 
-```africanCountries[3] = 'Ghana';
+```
+africanCountries[3] = 'Ghana';
 
 console.log(africanCountries); // Ghana has been inserted and has an index of 3
 ```
@@ -49,7 +52,8 @@ Notice that **Egypt** which was at the 3rd index has been replaced by **Ghana**.
 ## Loop Iteration
 We can traverse an array using a ***for*** loop which will access each item in an array. With our previously declared africanCountries array, I will go over every item in the array and display it to output.
 
-```for(var x = 0; x < africanCountries.length; x++){
+```
+for(var x = 0; x < africanCountries.length; x++){
 
     console.log(africanCountries[x]);
 }
@@ -59,14 +63,16 @@ We can traverse an array using a ***for*** loop which will access each item in a
 
 The loop accesses each item in the array and returns it before proceeding to the next. We use the variable ***x*** to work as the index as we go over our array, making sure to increase it by 1. The loop terminates when variable ***x*** reaches the value of 5. I have used the `length()` method which is a feature available for arrays in order to get the size of the array. The `africanCountries` array has a size of 6, and generally the size of an array is always one more than the last index. The last index of our array is 5 and it holds the value ***Kenya***. A good way to remember the last index in any array is using `console.log()` on the array, that way we can automatically find the last index of our array which is the returned value minus 1.
 
-```africanCountries.length; // This will return 6
+```
+africanCountries.length; // This will return 6
 
 console.log("There are " + africanCountries.length + " items in the array"); 
 ```
 ## Spread Operator
 Another way to manipulate arrays is by using the *spread* operator. This method creates a copy of an array which can be used inside another array. It is similar to [string interpolation](https://dmitripavlutin.com/string-interpolation-in-javascript/). Let's imagine that there was a multinational meeting of countries from all continents of the world and we wanted to invite a representative from every country. We can do this by creating an array and accessing items from another array. I will declare 3 more arrays for this example. The syntax of the *spread* is `...` and should be used inside square brackets as demonstrated below:
 
-```// Declare an empty array:
+```
+// Declare an empty array:
 var internationalUnion = [];
 
 //Declare 3 arrays for the other continents:
@@ -86,7 +92,8 @@ console.log(internationalUnion); // Returns the array with all the countries
 
 Notice how despite using the spread operator, we still have to include the commas in the square brackets of our array to ensure that the compiler knows where to separate the array items. By using the spread operator, we have saved lots of time of inserting a large amount of data. Even within our new array, we can still use the ***push()*** method on our array and add more values:
 
-```internationalUnion.push('Australia');
+```
+internationalUnion.push('Australia');
 
 console.log(internationalUnion); // The list now includes Australia
 ```
