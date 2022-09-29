@@ -91,7 +91,6 @@ console.log(internationalUnion); // Returns the array with all the countries
 
 ***Example output of our code:***
 ![Example output of our code](https://github.com/tawanda-profuse/Arrays-in-JavaScript/blob/master/images/image_7.png)
-***The new array that includes the previously defined arrays***
 
 Notice how despite using the spread operator, we still have to include the commas in the square brackets of our array to ensure that the compiler knows where to separate the array items. By using the spread operator, we have saved lots of time of inserting a large amount of data. Even within our new array, we can still use the ***push()*** method on our array and add more values:
 
