@@ -15,11 +15,11 @@ This will output **Zimbabwe** to the console:
 
 If you open Google Chrome, you can right-click any web page and select **inspect**. This opens a section on the page that gives you access to developer tools as well as other tools that allow you to monitor HTML elements, source files, network performance etc. If you don't have a code editor, you can use Google Chrome's text editor under the **console** tab. This allows you to write Javascript syntax.
 
+***Accessing the developer tools:***
 ![How to access the developer tools:](https://github.com/tawanda-profuse/Arrays-in-JavaScript/blob/master/images/image_2.png)
-***Accessing the developer tools***
 
+***The console tab under developer tools:***
 ![How to access the developer tools:](https://github.com/tawanda-profuse/Arrays-in-JavaScript/blob/master/images/image_3.png)
-***The console tab under developer tools***
 
 ## Adding & Removing Values
 You can insert items into an array by using the `push()` method. This adds a value to the array which gives it an index that is greater than the current last index by one. So, for example the code below adds **Botswana** to our previously declared array.
@@ -30,6 +30,7 @@ africanCountries.push('Botswana');
 console.log(africanCountries); // Prints the new array to the console
 ```
 
+***Example output of our code:***
 ![Example output of our code](https://github.com/tawanda-profuse/Arrays-in-JavaScript/blob/master/images/image_4.png)
 
 The **africanCountries** array now stores 7 items. If you wanted to access **Botswana**, you would access it's index which is the number '6'. In order to remove an item from the array, you would use the `pop()` method by doing this:
@@ -44,8 +45,8 @@ africanCountries[3] = 'Ghana';
 console.log(africanCountries); // Ghana has been inserted and has an index of 3
 ```
 
-![Example output of our code](https://github.com/tawanda-profuse/Arrays-in-JavaScript/blob/master/images/image_5.png)
 ***The new array including Ghana***
+![Example output of our code](https://github.com/tawanda-profuse/Arrays-in-JavaScript/blob/master/images/image_5.png)
 
 Notice that **Egypt** which was at the 3rd index has been replaced by **Ghana**. One thing to note is that an array can have an endless amount of values, I've just used a few for demonstration purposes but apparently it can store 2^31 - 1 values which is equal to 2, 147, 483, 647 items. One advantage of arrays is the ability to store multiple values as opposed to having individual variables to store each item. In addition, arrays can store all Javascript data types including [objects](https://www.w3schools.com/js/js_objects.asp). Declaring a variable for each country in our array would be tedious.
 
@@ -59,6 +60,7 @@ for(var x = 0; x < africanCountries.length; x++){
 }
 ```
 
+***Example output of our code:***
 ![Example output of our code](https://github.com/tawanda-profuse/Arrays-in-JavaScript/blob/master/images/image_6.png)
 
 The loop accesses each item in the array and returns it before proceeding to the next. We use the variable ***x*** to work as the index as we go over our array, making sure to increase it by 1. The loop terminates when variable ***x*** reaches the value of 5. I have used the `length()` method which is a feature available for arrays in order to get the size of the array. The `africanCountries` array has a size of 6, and generally the size of an array is always one more than the last index. The last index of our array is 5 and it holds the value ***Kenya***. A good way to remember the last index in any array is using `console.log()` on the array, that way we can automatically find the last index of our array which is the returned value minus 1.
@@ -87,6 +89,7 @@ internationalUnion = [...asianCountries, ...northAmerica, ...europeNations, ...a
 console.log(internationalUnion); // Returns the array with all the countries
 ```
 
+***Example output of our code:***
 ![Example output of our code](https://github.com/tawanda-profuse/Arrays-in-JavaScript/blob/master/images/image_7.png)
 ***The new array that includes the previously defined arrays***
 
@@ -98,6 +101,7 @@ internationalUnion.push('Australia');
 console.log(internationalUnion); // The list now includes Australia
 ```
 
+***Example output of our code:***
 ![Example output of our code](https://github.com/tawanda-profuse/Arrays-in-JavaScript/blob/master/images/image_8.png) 
 
 Now that you know a little bit more about arrays, go ahead and make something using them. 
