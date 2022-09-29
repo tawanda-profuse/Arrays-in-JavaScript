@@ -5,7 +5,7 @@ I have used the [Google Chrome](https://www.google.com/chrome/) developer consol
 
 `var africanCountries = ['Zimbabwe', 'Nigeria', 'South Africa', 'Egypt', 'DRC', 'Kenya'];`  
 
-The array I have declared is called **`africanCountries`** and it holds six values. The trick with arrays is that the values are indexed and can be referenced by stating the numeric position subtracted by 1. The first value in any array is always located at index 0, so in our example variable we can access the first item in the array by writing:
+The array I have declared is called **`africanCountries`** and it holds seven values. The trick with arrays is that the values are indexed and can be referenced by stating the numeric position subtracted by 1. The first value in any array is always located at index 0, so in our example variable we can access the first item in the array by writing:
 
 `console.log(africanCountries[0]);`
 
